@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>02_css_obverride2</title>
+	<style>
+	p{ color: blue;}
+	p{ color: yellow;}
+	p{ color: red;}	
+	</style>
+	<link type="text/css" rel="stylesheet" href="../style/02_css_override.css" /> 
+	<!-- 위의 link type 코드를 아래로 내리면 외부 코드를 가져다 씀 위치가 아주 중요하다! -->
+</head>
+<body>
+	<p>CSS가 중복 정의된 경우 어떤 것이 적용될까?</p> 
+	<!-- 
+	내부 : 아래 작성된 색상으로 적용됨 
+	외부 : 인라인에 작성된 코드로 적용되고 인라인에 없다면 내부 그이후 외부코드를 가져옴 인라인>내부>외부 순서
+	-->
+</body>
+</html>

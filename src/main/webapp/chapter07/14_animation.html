@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>14_animation</title>
+	<style>
+		div{
+			width: 100px;
+			height: 50px;
+			background: red;
+			position: relative;
+			animation: boxmove 5s linear infinite alternate;
+		}
+		
+		#box1 { 
+			animation-delay: 1s; 
+			animation-iteration-count: 3;
+			animation-timing-function: ease;		
+			}
+		
+		#box2 { 
+			animation-delay: 2s; 
+			animation-iteration-count: 3;
+			animation-timing-function: linear;		
+			}
+			
+		#box3 { 
+			animation-delay: 4s; 
+			animation-iteration-count: 3;
+			animation-timing-function: ease-in;		
+			}
+		
+		@keyframes boxmove {
+			from{left: 0px}
+			to {left: 300px}
+		}
+	</style>
+</head>
+<body>
+	<div id="box1">애니메이션 박스 1</div>
+    <div id="box2">애니메이션 박스 2</div>
+    <div id="box3">애니메이션 박스 3</div>
+    <div id="box4">애니메이션 박스 4</div>
+</body>
+</html>
+
+<!-- animation: boxmove 5s linear infinite alternate → 5초 동안 일정한 속도로 양방향 무한 반복 움직임
+양방향 : alternate / 무한반복 : infinite -->

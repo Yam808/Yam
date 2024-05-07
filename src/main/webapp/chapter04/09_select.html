@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>09_select</title>
+</head>
+<body>
+	<h3>관심 있는 학습 주제 한 가지를 선택하세요</h3>
+	<form>
+	<label>전공 분야를 선택 하세요
+		<select name="major">
+			<optgroup label="computer">
+				<option >Software</option>
+				<option >Robot</option>
+				<option >System</option>
+			</optgroup>
+			<optgroup label="language">
+				<option >Korea</option>
+				<option >English</option>
+				<option >China</option>
+				<option >Germany</option>
+			</optgroup>
+			<optgroup label="business">
+				<option >Service</option>
+				<option >Education</option>
+				<option >Communication</option>
+				<option >Marketing</option>
+			</optgroup>
+		</select>
+		<p></p>
+			<input type="submit" value="제출"> 
+			<input type="reset" value="다시작성">
+		</label>
+	</form>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<hr />
+	<h3>선택사항을 직접 입력하세요.</h3> 
+	<form>
+	    <label>전공 분야를 입력하세요.
+			<input type="text" list="majorlist" name="major">
+			    <datalist id="majorlist">
+				    <option value="Software">소프트웨어</option>
+				    <option value="Robot">로봇</option>
+				    <option value="System">시스템</option>
+				    <option value="Service">서비스</option>
+				    <option value="Education">교육</option>
+			    </datalist>
+		    <p></p>
+		    <input type="submit" value="완료">
+		    <input type="reset" value="다시작성">
+		</label>
+	</form>
+	
+</body>
+</html>
+
+<!--  <optgroup> 태그는 옵션 메뉴를 제공하는 드롭다운 리스트(drop-down list)에서 사용되는 
+옵션들의 그룹을 정의할 때 사용 -->
+<!-- <datalist> 요소는 사용자가 <input> 요소에 데이터를 입력할 때 미리 정의된 옵션을 
+드롭다운 리스트로 보여줌으로써 자동완성 기능을 제공 -->
